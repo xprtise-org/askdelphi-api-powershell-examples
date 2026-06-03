@@ -1,0 +1,11 @@
+param(
+    [string]$SettingsFile = "$PSScriptRoot/defaults.json",
+    [string]$Folder = "/",
+    [string]$Query = $null
+)
+$settings = (& $PSScriptRoot/_Load-Settings.ps1 -SettingsFile $SettingsFile)
+$auth = Get-Content -Raw -Path "$PSScriptRoot/auth.json" | ConvertFrom-Json
+
+$tenantResponse = Invoke-RestMethod -Uri "$($settings.ApiBaseURL)/v1/tenant/$($settings.TenantGuid)" -Method Get -Headers @{Authorization = "Bearer $($auth.response.token)" } -ContentType "application/json"
+
+$tenantResponse.response

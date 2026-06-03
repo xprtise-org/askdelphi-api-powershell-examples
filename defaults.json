@@ -1,0 +1,13 @@
+{
+    "AskDelphiAPIKey": "{{your-production-api-key}}",
+    "TenantGuid": "{{your-tenant-guid}}",
+    "ProjectGuid": "{{your-project-guid}}",
+    "AclGuid": "{{your-acl}}",
+
+    "ExternalAdapter": "{{adapter id for your external adapter}}",
+
+    "NameClaimValue": "{{name-claim-value}}",
+    "EMailClaimValue": "{{email-address-claim@example.com}}",
+    "UpnClaimValue": "{{your-upn-claim-value}}",
+    "ApiBaseURL": "https://edit.api.askdelphi.com"
+}

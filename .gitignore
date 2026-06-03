@@ -1,5 +1,2 @@
-/settings-*.json # prevent accidental commit of real API keys and guids
-/auth.json # prevent accidental commit of real API keys and guids
-/defaults-*.json # prevent accidental commit of real API keys and guids
-/defaults.json # prevent accidental commit of real API keys and guids
-/settings.json # prevent accidental commit of real API keys and guids 
+auth.json
+defaults-*.json
